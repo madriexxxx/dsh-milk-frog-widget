@@ -1,0 +1,5 @@
+# dsh-milk-frog-widget —— DSH bundle patch
+# 挂载宿主半端（余额路由 + 今日观测）；浏览器半端由 dsh.client 指向 ./client。
+- insert:
+    - id: dsh-milk-frog-widget
+      name: dsh-milk-frog-widget
