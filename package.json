@@ -1,0 +1,45 @@
+{
+  "name": "dsh-milk-frog-widget",
+  "version": "0.1.0",
+  "description": "DSH Web 界面右下角的奶蛙余额挂件：平时板着小脸，点一下大笑并显示 DeepSeek 余额、赠金与今日已用。",
+  "license": "MIT",
+  "author": "madriexxxx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madriexxxx/dsh-milk-frog-widget.git"
+  },
+  "homepage": "https://github.com/madriexxxx/dsh-milk-frog-widget#readme",
+  "bugs": {
+    "url": "https://github.com/madriexxxx/dsh-milk-frog-widget/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "balance",
+    "widget"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
